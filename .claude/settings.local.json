@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(php artisan tinker '--execute= *)",
+      "Bash(kill %1)",
+      "Bash(pkill -f \"artisan serve\")",
+      "Bash(php artisan *)"
+    ]
+  }
+}

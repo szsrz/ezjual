@@ -1,0 +1,31 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e3]:
+    - link "Laravel" [ref=e4] [cursor=pointer]:
+      - /url: http://ezjual.test
+    - generic [ref=e10]:
+      - generic [ref=e11]:
+        - generic [ref=e12]: Log masuk ke akaun anda
+        - generic [ref=e13]: Masukkan e-mel dan kata laluan anda di bawah untuk log masuk
+      - generic [ref=e14]:
+        - generic [ref=e15]:
+          - generic [ref=e16]: Alamat e-mel
+          - textbox "Alamat e-mel" [ref=e18]:
+            - /placeholder: email@example.com
+        - generic [ref=e19]:
+          - generic [ref=e20]:
+            - generic [ref=e21]: Kata Laluan
+            - generic [ref=e22]:
+              - textbox "Kata Laluan" [ref=e23]
+              - button "Toggle password visibility" [ref=e25]
+          - link "Lupa kata laluan anda?" [ref=e29] [cursor=pointer]:
+            - /url: http://ezjual.test/forgot-password
+        - generic [ref=e30]:
+          - checkbox "Ingat saya" [ref=e31]
+          - generic [ref=e33]: Ingat saya
+        - button "Log Masuk" [ref=e35]
+      - generic [ref=e41]:
+        - text: Belum ada akaun?
+        - link "Daftar" [ref=e42] [cursor=pointer]:
+          - /url: http://ezjual.test/register
+  - generic:
+    - status

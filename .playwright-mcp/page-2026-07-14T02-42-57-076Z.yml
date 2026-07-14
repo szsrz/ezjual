@@ -1,0 +1,67 @@
+- generic [active] [ref=f9e1]:
+  - generic [ref=f9e2]:
+    - link "Laravel Starter Kit" [ref=f9e4] [cursor=pointer]:
+      - /url: http://ezjual.test/dashboard
+    - navigation [ref=f9e9]:
+      - generic [ref=f9e10]:
+        - generic [ref=f9e11]: Platform
+        - generic [ref=f9e13]:
+          - link "Papan Pemuka" [ref=f9e15] [cursor=pointer]:
+            - /url: http://ezjual.test/dashboard
+          - link "Produk" [ref=f9e21] [cursor=pointer]:
+            - /url: http://ezjual.test/produk
+          - link "Pesanan" [ref=f9e27] [cursor=pointer]:
+            - /url: http://ezjual.test/pesanan
+          - link "Voucher" [ref=f9e33] [cursor=pointer]:
+            - /url: http://ezjual.test/voucher
+    - navigation [ref=f9e39]:
+      - link "Repositori" [ref=f9e41] [cursor=pointer]:
+        - /url: https://github.com/laravel/livewire-starter-kit
+      - link "Dokumentasi" [ref=f9e50] [cursor=pointer]:
+        - /url: https://laravel.com/docs/starter-kits#livewire
+    - button "Z zarith" [ref=f9e56]:
+      - generic [ref=f9e57]: Z
+      - generic [ref=f9e60]: zarith
+  - generic [ref=f9e66]:
+    - generic [ref=f9e67]:
+      - generic [ref=f9e68]:
+        - generic [ref=f9e69]: Voucher
+        - generic [ref=f9e70]: Urus kod diskaun untuk produk anda
+      - link "Tambah Voucher" [ref=f9e71] [cursor=pointer]:
+        - /url: http://ezjual.test/voucher/baru
+    - table [ref=f9e77]:
+      - rowgroup [ref=f9e78]:
+        - row [ref=f9e79]:
+          - columnheader "Kod" [ref=f9e80]
+          - columnheader "Diskaun" [ref=f9e82]
+          - columnheader "Produk" [ref=f9e84]
+          - columnheader "Luput" [ref=f9e86]
+          - columnheader "Status" [ref=f9e88]
+          - columnheader "Tindakan" [ref=f9e90]
+      - rowgroup [ref=f9e92]:
+        - row [ref=f9e93]:
+          - cell "TESTQA10" [ref=f9e94]
+          - cell "15.00%" [ref=f9e95]
+          - cell "Air Fryer 5L Digital" [ref=f9e96]
+          - cell "Tiada" [ref=f9e97]
+          - cell "Aktif" [ref=f9e98]
+          - cell "Edit Nyahaktifkan Padam" [ref=f9e100]:
+            - generic [ref=f9e101]:
+              - link "Edit" [ref=f9e102] [cursor=pointer]:
+                - /url: http://ezjual.test/voucher/3/edit
+              - generic [ref=f9e103] [cursor=pointer]: Nyahaktifkan
+              - generic [ref=f9e104] [cursor=pointer]: Padam
+        - row [ref=f9e105]:
+          - cell "FREE" [ref=f9e106]
+          - cell "10.00%" [ref=f9e107]
+          - cell "Tudung Bawal Premium Voile" [ref=f9e108]
+          - cell "31/07/2026" [ref=f9e109]
+          - cell "Aktif" [ref=f9e110]
+          - cell "Edit Nyahaktifkan Padam" [ref=f9e112]:
+            - generic [ref=f9e113]:
+              - link "Edit" [ref=f9e114] [cursor=pointer]:
+                - /url: http://ezjual.test/voucher/2/edit
+              - generic [ref=f9e115] [cursor=pointer]: Nyahaktifkan
+              - generic [ref=f9e116] [cursor=pointer]: Padam
+  - generic:
+    - status

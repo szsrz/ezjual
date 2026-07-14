@@ -1,0 +1,304 @@
+- generic [active] [ref=f5e1]:
+  - dialog [ref=f5e164]:
+    - iframe [ref=f5e165]:
+      - generic [ref=f6e1]:
+        - generic [ref=f6e2]:
+          - generic [ref=f6e4]:
+            - generic [ref=f6e5]: Internal Server Error
+            - button "Copy as Markdown" [ref=f6e11] [cursor=pointer]
+          - generic [ref=f6e18]:
+            - generic [ref=f6e19]:
+              - heading "Illuminate\\Database\\UniqueConstraintViolationException" [level=1] [ref=f6e20]
+              - generic [ref=f6e21]: vendor\laravel\framework\src\Illuminate\Database\Connection.php:857
+              - paragraph [ref=f6e23]: "SQLSTATE[23000]: Integrity constraint violation: 19 UNIQUE constraint failed: vouchers.code (Connection: sqlite, Database: D:\\laragon\\www\\ezjual\\database\\database.sqlite, SQL: insert into \"vouchers\" (\"code\", \"type\", \"value\", \"expires_at\", \"is_active\", \"updated_at\", \"created_at\") values (TESTQA10, percentage, 5, ?, 1, 2026-07-14 02:41:10, 2026-07-14 02:41:10))"
+            - generic [ref=f6e24]:
+              - generic [ref=f6e25]:
+                - generic [ref=f6e26]:
+                  - generic [ref=f6e27]: LARAVEL
+                  - generic [ref=f6e28]: 13.19.0
+                - generic [ref=f6e29]:
+                  - generic [ref=f6e30]: PHP
+                  - generic [ref=f6e31]: 8.4.6
+              - generic [ref=f6e32]: UNHANDLED
+              - generic [ref=f6e36]: CODE 23000
+            - generic [ref=f6e38]:
+              - generic [ref=f6e39]: "500"
+              - generic [ref=f6e43]: POST
+              - generic [ref=f6e47]: http://ezjual.test/livewire-a6772a1f/update
+              - button [ref=f6e48] [cursor=pointer]
+          - generic [ref=f6e53]:
+            - generic [ref=f6e54]:
+              - generic [ref=f6e55]:
+                - heading "Exception trace" [level=3] [ref=f6e60]
+                - link "1 previous exception" [ref=f6e61] [cursor=pointer]:
+                  - /url: "#previous-exceptions"
+              - generic [ref=f6e62]:
+                - generic [ref=f6e64] [cursor=pointer]:
+                  - generic [ref=f6e69]: 16 vendor frames
+                  - button [ref=f6e70]
+                - generic [ref=f6e75]:
+                  - generic [ref=f6e76] [cursor=pointer]:
+                    - generic [ref=f6e79]:
+                      - code [ref=f6e83]:
+                        - generic [ref=f6e84]: Illuminate\Database\Eloquent\Model::__callStatic(string, array)
+                      - generic [ref=f6e85]: storage\framework\views\livewire\classes\bc0d331a.php:16
+                    - button [ref=f6e88]
+                  - code [ref=f6e97]:
+                    - generic [ref=f6e98]: "11return new #[Title('Tambah Voucher')] class extends Component {"
+                    - generic [ref=f6e99]: 12 public VoucherForm $form;
+                    - generic [ref=f6e100]: "13"
+                    - generic [ref=f6e101]: "14 public function save(): void"
+                    - generic [ref=f6e102]: "15 {"
+                    - generic [ref=f6e103]: 16 $voucher = Voucher::create($this->form->dataForSave());
+                    - generic [ref=f6e104]: 17 $voucher->products()->sync($this->form->productIds);
+                    - generic [ref=f6e105]: "18"
+                    - generic [ref=f6e106]: "19 $this->redirect(route('vouchers.index'), navigate: true);"
+                    - generic [ref=f6e107]: "20 }"
+                    - generic [ref=f6e108]: "21"
+                    - generic [ref=f6e109]: "22 #[Computed]"
+                    - generic [ref=f6e110]: "23 public function products(): Collection"
+                    - generic [ref=f6e111]: "24 {"
+                    - generic [ref=f6e112]: 25 return Product::orderBy('name')->get(['id', 'name']);
+                    - generic [ref=f6e113]: "26 }"
+                    - generic [ref=f6e114]: "27"
+                    - generic [ref=f6e115]: "28"
+                - generic [ref=f6e117] [cursor=pointer]:
+                  - generic [ref=f6e122]: 58 vendor frames
+                  - button [ref=f6e123]
+                - generic [ref=f6e129] [cursor=pointer]:
+                  - generic [ref=f6e132]:
+                    - code [ref=f6e136]:
+                      - generic [ref=f6e137]: Illuminate\Foundation\Application->handleRequest(object(Illuminate\Http\Request))
+                    - generic [ref=f6e138]: public\index.php:20
+                  - button [ref=f6e141]
+                - generic [ref=f6e147] [cursor=pointer]:
+                  - generic [ref=f6e152]: 1 vendor frame
+                  - button [ref=f6e153]
+            - generic [ref=f6e158]:
+              - heading "Previous exception" [level=3] [ref=f6e164]
+              - generic [ref=f6e168] [cursor=pointer]:
+                - generic [ref=f6e169]:
+                  - heading "PDOException" [level=4] [ref=f6e170]
+                  - paragraph [ref=f6e171]: "SQLSTATE[23000]: Integrity constraint violation: 19 UNIQUE constraint failed: vouchers.code"
+                - button [ref=f6e172]
+            - generic [ref=f6e177]:
+              - generic [ref=f6e178]:
+                - heading "Queries" [level=3] [ref=f6e183]
+                - generic [ref=f6e184]: 1-6 of 6
+              - generic [ref=f6e186]:
+                - generic [ref=f6e187]:
+                  - generic [ref=f6e188]:
+                    - generic [ref=f6e189]: sqlite
+                    - code [ref=f6e196]:
+                      - generic [ref=f6e197]: select * from "sessions" where "id" = 'eTWn9JhFyciBIMyg8LNgdAN4Kdo8TYeywgSLTAPp' limit 1
+                  - generic [ref=f6e198]: 1.12ms
+                - generic [ref=f6e199]:
+                  - generic [ref=f6e200]:
+                    - generic [ref=f6e201]: sqlite
+                    - code [ref=f6e208]:
+                      - generic [ref=f6e209]: select * from "cache" where "key" in ('laravel-cache-livewire-checksum-failures:127.0.0.1')
+                  - generic [ref=f6e210]: 0.08ms
+                - generic [ref=f6e211]:
+                  - generic [ref=f6e212]:
+                    - generic [ref=f6e213]: sqlite
+                    - code [ref=f6e220]:
+                      - generic [ref=f6e221]: select * from "users" where "id" = 1 limit 1
+                  - generic [ref=f6e222]: 0.09ms
+                - generic [ref=f6e223]:
+                  - generic [ref=f6e224]:
+                    - generic [ref=f6e225]: sqlite
+                    - code [ref=f6e232]:
+                      - generic [ref=f6e233]: select count(*) as "aggregate" from "vouchers" where "code" = 'testqa10'
+                  - generic [ref=f6e234]: 0.11ms
+                - generic [ref=f6e235]:
+                  - generic [ref=f6e236]:
+                    - generic [ref=f6e237]: sqlite
+                    - code [ref=f6e244]:
+                      - generic [ref=f6e245]: select count(*) as "aggregate" from "products" where "id" = '2'
+                  - generic [ref=f6e246]: 0.05ms
+                - generic [ref=f6e247]:
+                  - generic [ref=f6e248]:
+                    - generic [ref=f6e249]: sqlite
+                    - code [ref=f6e256]:
+                      - generic [ref=f6e257]: select count(*) as "aggregate" from "products" where "id" = '5'
+                  - generic [ref=f6e258]: 0.04ms
+          - generic [ref=f6e260]:
+            - generic [ref=f6e261]:
+              - heading "Headers" [level=2] [ref=f6e262]
+              - generic [ref=f6e263]:
+                - generic [ref=f6e264]:
+                  - generic [ref=f6e265]: cookie
+                  - generic [ref=f6e267]: XSRF-TOKEN=eyJpdiI6IndyNldhd3ZjRVFOMkgvWEt6a0ZLYXc9PSIsInZhbHVlIjoidXAxVGlkMFp5MXNMazFSVDh4UkFKK1ZxWldxVEp6VFdhN0txSDFiNkNtZTZFelMvd3l6YmloMzduc3VQZVgzUlc2WVZ6YjVyZUd1Q1I2M0Y3Zm9YQ3VzWVFtdXlnTWw3RnA5ZW1FdkMwNXFjUVdGQXFPWUZQSGlkRHJmYTQ2OXIiLCJtYWMiOiI1NjJkZjJhYjY1ZDRiZTUyZmVkMDU2M2Y5NzVhNmM2YTE3YTZhOTM3MjEzODk2ZWYwNjRmMzgzZWM0Y2JmMmM0IiwidGFnIjoiIn0%3D; laravel-session=eyJpdiI6IjFiNzZhR1cwQ09tN1ErU1cxa2x6Rmc9PSIsInZhbHVlIjoieDN6ZnFvV3lldHBWK2hMaEsyazlYZUxpQTF5RzA0NmhKRlBPcWwrQndncVlTcDVSdzNPSU1oMGkyWmNoemZoY3U1dmo4QU1zMXFWUG10b0ljVXI0M3hVeTE0T1pOK3E0eDlCWUp0bDJpR2I3aFdmNktNL0xVU1B1U3MxMXB6Y3AiLCJtYWMiOiJlOWQ3OTMxM2I0YjcyM2UxZWZjNjBmNGI3ZjhiMTA0YWZkMTQxZTM4ZWE2ZjBmNzc1MTE1ZjAxZGUyODhiNTU4IiwidGFnIjoiIn0%3D
+                - generic [ref=f6e268]:
+                  - generic [ref=f6e269]: accept-language
+                  - generic [ref=f6e271]: en-US,en;q=0.9
+                - generic [ref=f6e272]:
+                  - generic [ref=f6e273]: accept-encoding
+                  - generic [ref=f6e275]: gzip, deflate
+                - generic [ref=f6e276]:
+                  - generic [ref=f6e277]: referer
+                  - generic [ref=f6e279]: http://ezjual.test/voucher/baru
+                - generic [ref=f6e280]:
+                  - generic [ref=f6e281]: origin
+                  - generic [ref=f6e283]: http://ezjual.test
+                - generic [ref=f6e284]:
+                  - generic [ref=f6e285]: accept
+                  - generic [ref=f6e287]: "*/*"
+                - generic [ref=f6e288]:
+                  - generic [ref=f6e289]: x-livewire
+                  - generic [ref=f6e291]: "1"
+                - generic [ref=f6e292]:
+                  - generic [ref=f6e293]: content-type
+                  - generic [ref=f6e295]: application/json
+                - generic [ref=f6e296]:
+                  - generic [ref=f6e297]: user-agent
+                  - generic [ref=f6e299]: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.0.0 Safari/537.36
+                - generic [ref=f6e300]:
+                  - generic [ref=f6e301]: content-length
+                  - generic [ref=f6e303]: "770"
+                - generic [ref=f6e304]:
+                  - generic [ref=f6e305]: connection
+                  - generic [ref=f6e307]: keep-alive
+                - generic [ref=f6e308]:
+                  - generic [ref=f6e309]: host
+                  - generic [ref=f6e311]: ezjual.test
+            - generic [ref=f6e312]:
+              - heading "Body" [level=2] [ref=f6e313]
+              - code [ref=f6e318]:
+                - generic [ref=f6e319]: "{"
+                - generic [ref=f6e320]: "\"_token\": \"Vh5xdmcTAGfdSe4cq4Zi1iMbUKDTlX6Q9LCcofvD\","
+                - generic [ref=f6e321]: "\"components\": ["
+                - generic [ref=f6e322]: "{"
+                - generic [ref=f6e323]: "\"snapshot\": \"{\"data\":{\"form\":[{\"code\":\"\",\"type\":\"percentage\",\"value\":\"\",\"expires_at\":\"\",\"is_active\":true,\"productIds\":[[],{\"s\":\"arr\"}]},{\"class\":\"AppLivewireFormsVoucherForm\",\"s\":\"form\"}]},\"memo\":{\"id\":\"dujYggWFyoTmDXTOnAlf\",\"name\":\"pages::admin.vouchers.create\",\"path\":\"voucher/baru\",\"method\":\"GET\",\"release\":\"a-a-a\",\"children\":[],\"scripts\":[],\"assets\":[],\"errors\":[],\"locale\":\"ms\",\"islands\":[]},\"checksum\":\"c3af3de296dd984b96293d0ba266a739da75605cbf6b6c71da4b568c48fe64cc\"}\","
+                - generic [ref=f6e324]: "\"updates\": {"
+                - generic [ref=f6e325]: "\"form.code\": \"testqa10\","
+                - generic [ref=f6e326]: "\"form.value\": \"5\","
+                - generic [ref=f6e327]: "\"form.productIds\": ["
+                - generic [ref=f6e328]: "\"2\","
+                - generic [ref=f6e329]: "\"5\""
+                - generic [ref=f6e330]: "]"
+                - generic [ref=f6e331]: "},"
+                - generic [ref=f6e332]: "\"calls\": ["
+                - generic [ref=f6e333]: "{"
+                - generic [ref=f6e334]: "\"method\": \"save\","
+                - generic [ref=f6e335]: "\"params\": [],"
+                - generic [ref=f6e336]: "\"metadata\": []"
+                - generic [ref=f6e337]: "}"
+                - generic [ref=f6e338]: "]"
+                - generic [ref=f6e339]: "}"
+                - generic [ref=f6e340]: "]"
+                - generic [ref=f6e341]: "}"
+            - generic [ref=f6e342]:
+              - heading "Routing" [level=2] [ref=f6e343]
+              - generic [ref=f6e344]:
+                - generic [ref=f6e345]:
+                  - generic [ref=f6e346]: controller
+                  - generic [ref=f6e348]: Livewire\Mechanisms\HandleRequests\HandleRequests@handleUpdate
+                - generic [ref=f6e349]:
+                  - generic [ref=f6e350]: route name
+                  - generic [ref=f6e352]: default-livewire.update
+                - generic [ref=f6e353]:
+                  - generic [ref=f6e354]: middleware
+                  - generic [ref=f6e356]: web, Livewire\Mechanisms\HandleRequests\RequireLivewireHeaders
+            - generic [ref=f6e357]:
+              - heading "Routing parameters" [level=2] [ref=f6e358]
+              - generic [ref=f6e359]: // No routing parameters
+        - generic:
+          - tooltip "Illuminate\\Database\\Eloquent\\Model::__callStatic(string, array)"
+  - generic [ref=f5e2]:
+    - link "Laravel Starter Kit" [ref=f5e4] [cursor=pointer]:
+      - /url: http://ezjual.test/dashboard
+    - navigation [ref=f5e9]:
+      - generic [ref=f5e10]:
+        - generic [ref=f5e11]: Platform
+        - generic [ref=f5e13]:
+          - link "Papan Pemuka" [ref=f5e15] [cursor=pointer]:
+            - /url: http://ezjual.test/dashboard
+          - link "Produk" [ref=f5e21] [cursor=pointer]:
+            - /url: http://ezjual.test/produk
+          - link "Pesanan" [ref=f5e27] [cursor=pointer]:
+            - /url: http://ezjual.test/pesanan
+          - link "Voucher" [ref=f5e33] [cursor=pointer]:
+            - /url: http://ezjual.test/voucher
+    - navigation [ref=f5e39]:
+      - link "Repositori" [ref=f5e41] [cursor=pointer]:
+        - /url: https://github.com/laravel/livewire-starter-kit
+      - link "Dokumentasi" [ref=f5e50] [cursor=pointer]:
+        - /url: https://laravel.com/docs/starter-kits#livewire
+    - button "Z zarith" [ref=f5e56]:
+      - generic [ref=f5e57]: Z
+      - generic [ref=f5e60]: zarith
+  - generic [ref=f5e66]:
+    - generic [ref=f5e67]: Tambah Voucher
+    - generic [ref=f5e68]:
+      - generic [ref=f5e69]:
+        - generic [ref=f5e70]: Kod Voucher
+        - textbox "Kod Voucher" [ref=f5e72]:
+          - /placeholder: "Contoh: RAYA10"
+          - text: testqa10
+      - generic [ref=f5e73]:
+        - generic [ref=f5e74]:
+          - generic [ref=f5e75]: Jenis Diskaun
+          - combobox "Jenis Diskaun" [ref=f5e76]:
+            - option "Peratusan (%)" [selected]
+            - option "Jumlah Tetap (RM)"
+        - generic [ref=f5e77]:
+          - generic [ref=f5e78]: Nilai Diskaun
+          - spinbutton "Nilai Diskaun" [ref=f5e80]: "5"
+      - generic [ref=f5e81]:
+        - generic [ref=f5e82]: Tarikh Luput (pilihan)
+        - textbox "Tarikh Luput (pilihan)" [ref=f5e84]
+      - generic [ref=f5e85]:
+        - checkbox "Aktif" [checked] [ref=f5e86]
+        - generic [ref=f5e90]: Aktif
+      - generic [ref=f5e91]:
+        - generic [ref=f5e92]: Produk Berkenaan
+        - group "Produk Berkenaan" [ref=f5e93]:
+          - generic [ref=f5e94]:
+            - checkbox "Air Fryer 5L Digital" [ref=f5e95]
+            - generic [ref=f5e97]: Air Fryer 5L Digital
+          - generic [ref=f5e98]:
+            - checkbox "Baju Kurung Moden Sulam" [checked] [ref=f5e99]
+            - generic [ref=f5e101]: Baju Kurung Moden Sulam
+          - generic [ref=f5e102]:
+            - checkbox "Beg Tangan Kulit PU Wanita" [ref=f5e103]
+            - generic [ref=f5e105]: Beg Tangan Kulit PU Wanita
+          - generic [ref=f5e106]:
+            - checkbox "Botol Air Vacuum Flask 1L" [ref=f5e107]
+            - generic [ref=f5e109]: Botol Air Vacuum Flask 1L
+          - generic [ref=f5e110]:
+            - checkbox "Kanta Mata Hitam UV Protection" [ref=f5e111]
+            - generic [ref=f5e113]: Kanta Mata Hitam UV Protection
+          - generic [ref=f5e114]:
+            - checkbox "Kasut Sukan Ringan Lelaki" [ref=f5e115]
+            - generic [ref=f5e117]: Kasut Sukan Ringan Lelaki
+          - generic [ref=f5e118]:
+            - checkbox "Kopi Radix Original" [checked] [ref=f5e119]
+            - generic [ref=f5e121]: Kopi Radix Original
+          - generic [ref=f5e122]:
+            - checkbox "Madu Tualang Asli 500g" [ref=f5e123]
+            - generic [ref=f5e125]: Madu Tualang Asli 500g
+          - generic [ref=f5e126]:
+            - checkbox "Minyak Gamat Plus" [ref=f5e127]
+            - generic [ref=f5e129]: Minyak Gamat Plus
+          - generic [ref=f5e130]:
+            - checkbox "Serum Vitamin C Glow" [ref=f5e131]
+            - generic [ref=f5e133]: Serum Vitamin C Glow
+          - generic [ref=f5e134]:
+            - checkbox "Set Peralatan Dapur Non-Stick" [ref=f5e135]
+            - generic [ref=f5e137]: Set Peralatan Dapur Non-Stick
+          - generic [ref=f5e138]:
+            - checkbox "Set Skincare Acne Care" [ref=f5e139]
+            - generic [ref=f5e141]: Set Skincare Acne Care
+          - generic [ref=f5e142]:
+            - checkbox "Speaker Bluetooth Mini Portable" [ref=f5e143]
+            - generic [ref=f5e145]: Speaker Bluetooth Mini Portable
+          - generic [ref=f5e146]:
+            - checkbox "Suplemen Kolagen Kecantikan" [ref=f5e147]
+            - generic [ref=f5e149]: Suplemen Kolagen Kecantikan
+          - generic [ref=f5e150]:
+            - checkbox "Tudung Bawal Premium Voile" [ref=f5e151]
+            - generic [ref=f5e153]: Tudung Bawal Premium Voile
+      - button "Simpan Voucher" [ref=f5e154]
+  - generic:
+    - status

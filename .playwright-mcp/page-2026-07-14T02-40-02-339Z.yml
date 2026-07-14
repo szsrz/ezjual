@@ -1,0 +1,97 @@
+- generic [ref=f4e1]:
+  - generic [ref=f4e2]:
+    - link "Laravel Starter Kit" [ref=f4e4] [cursor=pointer]:
+      - /url: http://ezjual.test/dashboard
+    - navigation [ref=f4e9]:
+      - generic [ref=f4e10]:
+        - generic [ref=f4e11]: Platform
+        - generic [ref=f4e13]:
+          - link "Papan Pemuka" [ref=f4e15] [cursor=pointer]:
+            - /url: http://ezjual.test/dashboard
+          - link "Produk" [ref=f4e21] [cursor=pointer]:
+            - /url: http://ezjual.test/produk
+          - link "Pesanan" [ref=f4e27] [cursor=pointer]:
+            - /url: http://ezjual.test/pesanan
+          - link "Voucher" [ref=f4e33] [cursor=pointer]:
+            - /url: http://ezjual.test/voucher
+    - navigation [ref=f4e39]:
+      - link "Repositori" [ref=f4e41] [cursor=pointer]:
+        - /url: https://github.com/laravel/livewire-starter-kit
+      - link "Dokumentasi" [ref=f4e50] [cursor=pointer]:
+        - /url: https://laravel.com/docs/starter-kits#livewire
+    - button "Z zarith" [ref=f4e56]:
+      - generic [ref=f4e57]: Z
+      - generic [ref=f4e60]: zarith
+  - generic [ref=f4e66]:
+    - generic [ref=f4e67]: Tambah Voucher
+    - generic [ref=f4e68]:
+      - generic [ref=f4e69]:
+        - generic [ref=f4e70]: Kod Voucher
+        - textbox "Kod Voucher" [active] [ref=f4e72]:
+          - /placeholder: "Contoh: RAYA10"
+      - generic [ref=f4e73]:
+        - generic [ref=f4e74]:
+          - generic [ref=f4e75]: Jenis Diskaun
+          - combobox "Jenis Diskaun" [ref=f4e76]:
+            - option "Peratusan (%)" [selected]
+            - option "Jumlah Tetap (RM)"
+        - generic [ref=f4e77]:
+          - generic [ref=f4e78]: Nilai Diskaun
+          - spinbutton "Nilai Diskaun" [ref=f4e80]
+      - generic [ref=f4e81]:
+        - generic [ref=f4e82]: Tarikh Luput (pilihan)
+        - textbox "Tarikh Luput (pilihan)" [ref=f4e84]
+      - generic [ref=f4e85]:
+        - checkbox "Aktif" [checked] [ref=f4e86]
+        - generic [ref=f4e90]: Aktif
+      - generic [ref=f4e91]:
+        - generic [ref=f4e92]: Produk Berkenaan
+        - group "Produk Berkenaan" [ref=f4e93]:
+          - generic [ref=f4e94]:
+            - checkbox "Air Fryer 5L Digital" [ref=f4e95]
+            - generic [ref=f4e97]: Air Fryer 5L Digital
+          - generic [ref=f4e98]:
+            - checkbox "Baju Kurung Moden Sulam" [ref=f4e99]
+            - generic [ref=f4e101]: Baju Kurung Moden Sulam
+          - generic [ref=f4e102]:
+            - checkbox "Beg Tangan Kulit PU Wanita" [ref=f4e103]
+            - generic [ref=f4e105]: Beg Tangan Kulit PU Wanita
+          - generic [ref=f4e106]:
+            - checkbox "Botol Air Vacuum Flask 1L" [ref=f4e107]
+            - generic [ref=f4e109]: Botol Air Vacuum Flask 1L
+          - generic [ref=f4e110]:
+            - checkbox "Kanta Mata Hitam UV Protection" [ref=f4e111]
+            - generic [ref=f4e113]: Kanta Mata Hitam UV Protection
+          - generic [ref=f4e114]:
+            - checkbox "Kasut Sukan Ringan Lelaki" [ref=f4e115]
+            - generic [ref=f4e117]: Kasut Sukan Ringan Lelaki
+          - generic [ref=f4e118]:
+            - checkbox "Kopi Radix Original" [ref=f4e119]
+            - generic [ref=f4e121]: Kopi Radix Original
+          - generic [ref=f4e122]:
+            - checkbox "Madu Tualang Asli 500g" [ref=f4e123]
+            - generic [ref=f4e125]: Madu Tualang Asli 500g
+          - generic [ref=f4e126]:
+            - checkbox "Minyak Gamat Plus" [ref=f4e127]
+            - generic [ref=f4e129]: Minyak Gamat Plus
+          - generic [ref=f4e130]:
+            - checkbox "Serum Vitamin C Glow" [ref=f4e131]
+            - generic [ref=f4e133]: Serum Vitamin C Glow
+          - generic [ref=f4e134]:
+            - checkbox "Set Peralatan Dapur Non-Stick" [ref=f4e135]
+            - generic [ref=f4e137]: Set Peralatan Dapur Non-Stick
+          - generic [ref=f4e138]:
+            - checkbox "Set Skincare Acne Care" [ref=f4e139]
+            - generic [ref=f4e141]: Set Skincare Acne Care
+          - generic [ref=f4e142]:
+            - checkbox "Speaker Bluetooth Mini Portable" [ref=f4e143]
+            - generic [ref=f4e145]: Speaker Bluetooth Mini Portable
+          - generic [ref=f4e146]:
+            - checkbox "Suplemen Kolagen Kecantikan" [ref=f4e147]
+            - generic [ref=f4e149]: Suplemen Kolagen Kecantikan
+          - generic [ref=f4e150]:
+            - checkbox "Tudung Bawal Premium Voile" [ref=f4e151]
+            - generic [ref=f4e153]: Tudung Bawal Premium Voile
+      - button "Simpan Voucher" [ref=f4e154]
+  - generic:
+    - status
