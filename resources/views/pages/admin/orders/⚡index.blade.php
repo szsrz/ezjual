@@ -20,6 +20,11 @@ new #[Title('Pesanan')] class extends Component {
         $order->update(['status' => $status]);
     }
 
+    public function resetFilters(): void
+    {
+        $this->reset('status', 'productId');
+    }
+
     #[Computed]
     public function orders(): Collection
     {
@@ -64,6 +69,10 @@ new #[Title('Pesanan')] class extends Component {
                 <flux:select.option value="{{ $product->id }}">{{ $product->name }}</flux:select.option>
             @endforeach
         </flux:select>
+
+        <flux:button wire:click="resetFilters" variant="ghost" icon="x-mark">
+            {{ __('Reset') }}
+        </flux:button>
     </div>
 
     <flux:table class="mt-6">
